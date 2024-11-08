@@ -1,0 +1,11 @@
+{
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && clang++ -std=c++23 \"$fileName\" -o \"$fileNameWithoutExt\" && ./\"$fileNameWithoutExt\" ; del \"$fileNameWithoutExt.exe\"",
+    },
+    "clangd.arguments": [
+        "--query-driver=C:/App/Dev/MSYS2/ucrt64/bin/clang++.exe",
+    ],
+    "clangd.fallbackFlags": [
+        "-std=c++23",
+    ]
+}
